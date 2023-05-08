@@ -63,8 +63,6 @@ body {
   background-image: url(https://i.pinimg.com/originals/43/5f/d3/435fd377bcbfe072591ba4f9ff443ef3.jpg);
   display: flex;
   background-size: cover;
-  width: 1349px;
-  height: 600px;
 }
 
 .banner .container {
@@ -124,7 +122,7 @@ body {
 }
 
 .login .container {
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   height: 100%;
 }
@@ -259,6 +257,5 @@ body {
 
 .simulador .container {
   flex-direction: column;
-  overflow: scroll; 
   height: var(--tamanho-simulador);
 }
