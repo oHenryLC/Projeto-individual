@@ -30,6 +30,11 @@ body {
   height: 100%;
 }
 
+.logo_img {
+  width: 140px;
+  height: 80px;
+}
+
 .header a {
   text-decoration: none;
   color: #ffd700;
@@ -45,7 +50,7 @@ body {
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  color: #e3b062;
+  color: #ffd700;
 }
 
 .titulo {
@@ -118,7 +123,7 @@ body {
   height: 600px;
   width: 1349;
   background-image: url(https://wallpaperaccess.com/full/1310629.jpg);
-  background-size: cover;
+  background-size: contain;
 }
 
 .login .container {
@@ -130,6 +135,7 @@ body {
 .card {
   width: 30%;
   background-color: rgb(190, 2, 2);
+  background-image: url(https://i.pinimg.com/originals/5a/81/e0/5a81e00ea6f140c929de8a9a557e4d09.png);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -137,6 +143,7 @@ body {
   flex-direction: column;
   color: #ffd700;
   row-gap: 20px;
+  
 }
 
 .card-cadastro {
@@ -185,7 +192,7 @@ body {
   border-radius: 5px;
   font-weight: 600;
   font-size: 18px;
-  color: #fff;
+  color: #000000;
   background-color: #ffd700;
   width: 120px;
   height: 30px;
