@@ -141,7 +141,7 @@ body {
 }
 
 .historia2 {
-  background-color: #0000006c;
+  background-color: #0000009c;
   border-radius: 15px;
   margin-top: 15px;
 }
@@ -163,12 +163,13 @@ body {
   width: 30%;
   background-color: rgb(190, 2, 2);
   background-image: url(https://i.pinimg.com/originals/5a/81/e0/5a81e00ea6f140c929de8a9a557e4d09.png);
+  background-size: cover;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  color: #ffd700;
+  color: #ffffff;
   row-gap: 20px;
 
 }
@@ -287,6 +288,8 @@ body {
 
 .simulador {
   color: white;
+  background-image: url(https://pbs.twimg.com/media/FPnUIWgXEAkPI2H.jpg);
+  background-size: cover;
 }
 
 .simulador .container {
