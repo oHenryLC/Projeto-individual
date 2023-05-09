@@ -7,7 +7,7 @@
     "start": "node app.js",
     "dev": "nodemon --exec node app.js"
   },
-  "author": "Feito pelos desenvolvedores @ São Paulo Tech School / Bandtec Digital School",
+  "author": "Feito por Henrique Lipert @ São Paulo Tech School / 1SISA",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
