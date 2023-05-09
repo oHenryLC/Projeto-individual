@@ -119,6 +119,33 @@ body {
   text-align: center;
 }
 
+.social2 {
+  background-color: #ffffff;
+  display: flex;
+}
+
+.social2 .container2 {
+  justify-content: center;
+}
+
+.social2  {
+  background-image: url(https://eikhu9b6e94.exactdn.com/wp-content/uploads/2020/04/img_1319.jpg?strip=all&lossy=0&quality=80&webp=80&avif=80&ssl=1);
+  background-size: cover;
+}
+
+.historia {
+  background-color: #fffcfcb2;
+  border-radius: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.historia2 {
+  background-color: #0000006c;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
 .login {
   height: 600px;
   width: 1349;
@@ -143,7 +170,7 @@ body {
   flex-direction: column;
   color: #ffd700;
   row-gap: 20px;
-  
+
 }
 
 .card-cadastro {
@@ -213,7 +240,7 @@ body {
   display: none
 }
 
-.alerta_erro{
+.alerta_erro {
   display: flex;
   justify-content: flex-end;
 }
@@ -230,7 +257,7 @@ body {
   margin-right: 10%;
 }
 
-.card_erro #mensagem_erro{
+.card_erro #mensagem_erro {
   font-weight: 500;
   font-size: 20px;
 }
