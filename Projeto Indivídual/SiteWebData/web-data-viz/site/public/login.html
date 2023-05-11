@@ -62,7 +62,7 @@
                         <span>Senha:</span>
                         <input id="senha_input" type="text" placeholder="******">
                     </div>
-                    <button class="botao" onclick="entrar()">Entrar</button>
+                    <button class="botao" onclick="entrar(); audio()">Entrar</button>
                 </div>
 
                 <div id="div_aguardar" class="loading-div">
@@ -157,4 +157,8 @@
         cardErro.style.display = "none"
     }
 
+    function audio() {
+        var som = new Audio('som/katchau.mp3')
+        som.play()
+    }
 </script>
