@@ -6,15 +6,15 @@
 comandos para mysql - banco local - ambiente de desenvolvimento
 */
 
-CREATE DATABASE projetondividual;
+CREATE DATABASE projetoindividual;
 
 USE projetoindividual;
 
-CREATE TABLE cadastro (
-	idCadastro INT PRIMARY KEY AUTO_INCREMENT,
-	nome VARCHAR(45),
-	email VARCHAR(45),
-	senha VARCHAR(50)
+CREATE TABLE usuario(
+idUsuario int primary key auto_increment,
+nome VARCHAR(45),
+email VARCHAR(45),
+senha VARCHAR(50)
 );
 
 CREATE TABLE aviso (
@@ -22,7 +22,7 @@ CREATE TABLE aviso (
 	titulo VARCHAR(100),
 	descricao VARCHAR(150),
 	fk_usuario INT,
-	FOREIGN KEY (fk_usuario) REFERENCES usuario(id)
+	FOREIGN KEY (fk_usuario) REFERENCES usuario(idUsuario)
 );
 
 -- create table aquario (
