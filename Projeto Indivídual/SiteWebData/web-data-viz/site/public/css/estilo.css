@@ -5,6 +5,14 @@ body {
   background-color: rgb(190, 2, 2);
 }
 
+.body2 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow', 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(0, 0, 0);
+}
+
+
 :root {
   --tamanho-header: 80px;
   --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
@@ -19,6 +27,12 @@ body {
   margin: auto;
 }
 
+.header2 {
+  height: var(--tamanho-header);
+  background-color: rgb(190, 2, 2);
+  border-bottom: 2px solid #ffd700 ;
+}
+
 .header {
   height: var(--tamanho-header);
   border-bottom: 2px solid #ffd700;
@@ -30,12 +44,23 @@ body {
   height: 100%;
 }
 
+.header2 .container {
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
 .logo_img {
   width: 140px;
   height: 80px;
 }
 
 .header a {
+  text-decoration: none;
+  color: #ffd700;
+}
+
+.header2 a {
   text-decoration: none;
   color: #ffd700;
 }
@@ -120,12 +145,11 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #00000046;
-  border-color: #ffd700;
-  border-radius: 10px;
+  border-radius: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
   box-shadow: #000000 5px 5px;
-  border: 3px solid yellow;
+  border: 3px solid rgb(255, 0, 0);
 }
 
 .box p {
@@ -193,6 +217,7 @@ body {
   color: #ffffff;
   row-gap: 20px;
   box-shadow: 10px 15px #000000;
+  border: 3px solid #ffd700;
 }
 
 .card-cadastro {
@@ -333,4 +358,14 @@ body {
   height: 150px;
   width: 50%;
   justify-content: end;
+}
+
+.mural {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+}
+
+.mural .descriçao {
+  
 }
