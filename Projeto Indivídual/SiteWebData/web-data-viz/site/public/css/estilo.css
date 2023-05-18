@@ -10,6 +10,15 @@ body {
   padding: 0;
   font-family: 'Barlow', 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgb(0, 0, 0);
+  background-image: url(https://uploads.spiritfanfiction.com/historias/capas/201802/o-rei-chick-hicks-e-mcqueen-tres-carros-um-campeao-12044883-110220182332.png);
+  background-size: contain
+}
+
+.body3 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow', 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
 }
 
 
@@ -150,6 +159,11 @@ body {
   margin-bottom: 20px;
   box-shadow: #000000 5px 5px;
   border: 3px solid rgb(255, 0, 0);
+  transition-duration: 0.3s;
+}
+
+.box:hover {
+  color: rgb(190, 2, 2);
 }
 
 .box p {
@@ -364,8 +378,32 @@ body {
   display: flex;
   flex-direction: row;
   color: #fff;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
 }
 
 .mural .descriçao {
-  
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(190, 2, 2, 0.466);
+  border-radius: 10px;
+  border: 3px solid #ffd700;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  height: auto;
+  transition-duration: 0.5s;
 }
+
+.mural .img {
+  height: 197.88px;
+  width: 306px;
+  border-radius: 20px;
+}
+
+.descriçao:hover {
+  color: #fffb00;
+}
+
