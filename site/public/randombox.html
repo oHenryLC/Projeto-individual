@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Carros | Desafio</title>
+    <link rel="icon" href="./assets/icon/raio.ico">
+    <link href="css/randombox.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+        <div class="header2">
+
+                <h1 class="titulo"><img class="logo_img" src="css/img/logo.png" alt=""></h1>
+                <ul class="navbar">
+                    <li>
+                        <a href="desafio.html">Voltar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fundo">
+        <div class="container">
+
+        <script src="script.js"></script>
+        <div class="wrapper">
+            <h2 class="question">Pegue o McQueen</h2>
+            <div class="button-group">
+
+                <button class="no-btn" onclick="premio()"></button>
+
+            </div>
+        </div>
+</body>
+
+</html>
+
+<script>
+
+    const wrapper = document.querySelector('.wrapper');
+    const question = document.querySelector('.question');
+
+    const noBtn = document.querySelector('.no-btn');
+
+    const wrapperRect = wrapper.getBoundingClientRect();
+    const noBtnRect = noBtn.getBoundingClientRect();
+
+
+    noBtn.addEventListener('mouseover', () => {
+        const i = Math.floor(Math.random() * (wrapperRect.width - noBtnRect.width)) + 1;
+        const j = Math.floor(Math.random() * (wrapperRect.height - noBtnRect.height)) + 1;
+
+        noBtn.style.left = i + 'px';
+        noBtn.style.top = j + 'px';
+    });
+
+    function premio() {
+        alert('Parabéns!! você ganhou o desafio. Voltando para a tela ínicial do desafio')
+        window.location = 'desafio.html'
+    }
+
+</script>

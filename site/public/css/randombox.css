@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+:root {
+    --tamanho-header: 80px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    height: 100vh;
+}
+
+*::selection {
+    background: #30bae8;
+    color: #fff;
+}
+
+.fundo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(255, 141, 48);
+    background-image: url(https://wallpapercave.com/wp/wp9241092.jpg);
+    background-size: cover;
+}
+
+.wrapper {
+    position: relative;
+    width: 1300px;
+    height: 700px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-image: url(https://eikhu9b6e94.exactdn.com/wp-content/uploads/2020/04/img_1319.jpg?strip=all&lossy=0&quality=80&webp=80&avif=80&ssl=1);
+    background-size: cover; */
+}
+
+i {
+    font-size: 7.5em;
+    color: #30bae8;
+    border: 5px solid transparent;
+    outline: 3px solid #30bae8;
+    border-radius: 50%;
+}
+
+h2 {
+    font-size: 3em;
+    color: #ffffff;
+    margin: 15px 0;
+}
+
+.btn-group {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+button {
+    position: absolute;
+    width: 170px;
+    height: 100px;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+    background-image: url('../assets/imgs/mcqueen_correndo.png');
+    background-size: cover;
+    background-position: relative;
+}
+
+button:nth-child(1) {
+    margin-left: -100px;
+
+}
+
+button:nth-child(2) {
+    margin-right: -200px;
+}
+
+.logo_img {
+    margin-top: -5px;
+    margin-left: 137px;
+    width: 140px;
+    height: 80px;
+}
+
+.header2 {
+    height: var(--tamanho-header);
+    background-color: rgb(190, 2, 2);
+    border-bottom: 2px solid #ffd700;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .header2 .container {
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+} */
+
+.header2 a {
+    text-decoration: none;
+    color: #ffd700;
+}
+
+.agora {
+    font-weight: 800;
+}
+
+.navbar {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: #ffd700;
+    margin-right: 100px;
+}
+
+.navbar a {
+    transition-duration: 0.3s;
+}
+
+.navbar a:hover {
+    color: rgb(172, 126, 1);
+}

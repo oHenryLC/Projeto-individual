@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Carros | Simulador</title>
+
+  <link rel="icon" href="./assets/icon/raio.ico">
+  <link rel="stylesheet" href="./css/estilo.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+
+<body class="body3">
+  <div class="header2">
+    <div class="container">
+      <h1 class="titulo"><img class="logo_img" src="css/img/logo.png" alt=""></h1>
+      <ul class="navbar">
+
+        <li>
+          <a href="dashboards.html">Dashboard</a>
+        </li>
+        <li >
+          <a href="mural.html">Mural</a>
+        </li>
+        <li class="agora">
+          <a href="#">Simulador</a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="desafio.html">Desafio</a>
+        </li>
+        <li>
+          <a href="index.html">Sair</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <h2></h2>
+<div>
+  <div class="tituloS">
+  <h1>Simulador dos 3 finalistas da copa pistão</h1>
+  <h3>Selecione abaixo suas caracteriscas favoritas e veja seus resultados</h3>
+</div>
+  <div class="perguntas">
+  <span> Selecione uma cor: </span> 
+  <select name="" id="select_cor">
+    <option value=""></option>
+    <option value="Vermelho">Vermelho</option>
+    <option value="Verde">Verde</option>
+    <option value="Azul">Azul</option>
+  </select> <br>
+  <button class="botaoS" onclick="cadastrarCor()">Cadastrar Cor</button>
+   <br>
+   <br>
+  <span> Selecione um número: </span>
+  <select name="" id="select_numero">
+    <option value=""></option>
+    <option value="43">43</option>
+    <option value="95">95</option>
+    <option value="86">86</option>
+  </select> <br>
+  <button class="botaoS" onclick="cadastrarNumero()">Cadastrar Número</button>
+  <br>
+  <br>
+  <span> Selecione um patrocinador: </span>
+  <select name="" id="select_pat">
+    <option value=""></option>
+    <option value="Rust-eze">Rust-eze</option>
+    <option value="Dinoco">Dinoco</option>
+  </select> <br>
+  <button class="botaoS" onclick="cadastrarPatrocinador()">Cadastrar Patrocinador</button>
+  <br>
+  <br>
+  
+  <button class="botaoS" onclick="verResultado()">Ver Resultado</button>
+</div>
+<div class="resultado" id="div_resultado">
+
+</div>
+</div>
+
+</body>
+
+</html>
+
+<script>
+  var listaCor = [];
+  var listaNumero = [];
+  var listaPatrocinador = [];
+
+  function cadastrarCor() {
+    var cor = select_cor.value;
+    listaCor.push(cor);
+  } 
+
+  function cadastrarNumero() {
+    var numero = select_numero.value;
+    listaNumero.push(numero);
+  }
+
+  function cadastrarPatrocinador(){
+    var patrocinador = select_pat.value
+    listaPatrocinador.push(patrocinador);
+  } 
+
+  function verResultado(){
+    var cor = select_cor.value;
+    var numero = select_numero.value;
+    var patrocinador = select_pat.value
+
+    if(cor == 'Vermelho' && numero == 95 && patrocinador == 'Rust-eze'){
+      div_resultado.innerHTML = `Aparentemente você realmente é muito fã do McQueen <br> <img src="https://s3.amazonaws.com/blog.dentrodahistoria.com.br/wp-content/uploads/2022/09/14102229/relampago-mcqueen.png" style="width: 100%; height: 160px;">`
+    } else if (cor == 'Vermelho' && numero == 43 && patrocinador == 'Rust-eze'){
+      div_resultado.innerHTML = `Seu favorito é o McQueen, mas você também gosta do Rei que eu sei <br> <img src="https://pbs.twimg.com/media/E6GRv5UXsAULv5d.jpg:large" style="width: 100%; height: 160px;">`
+    } else if (cor == 'Vermelho' && numero == 86 && patrocinador == 'Rust-eze'){
+      div_resultado.innerHTML = `Seu favorito é o McQueen, mas você também tem um mal gosto por gostar do Chick <br> <img src="https://i.ytimg.com/vi/22WtxZaDfUU/maxresdefault.jpg" style="width: 100%; height: 160px;">`
+    } else if (cor == 'Vermelho' && numero == 95 && patrocinador == 'Dinoco'){
+      div_resultado.innerHTML = `Seu sonho era o McQueen ter ganhado aquela corrida para entrar na Dinoco <br> <img src="https://i.pinimg.com/1200x/93/81/c4/9381c4ad9972b9a6c56cbe72d7f224ed.jpg" style="width: 100%; height: 160px;">`
+    } else if (cor == 'Vermelho' && numero == 43 && patrocinador == 'Dinoco'){
+      div_resultado.innerHTML = `Seu favorito provavelmente é o Rei, mas o McQueen também chama sua atenção <br> <img src="https://pbs.twimg.com/media/E6GRv5UXsAULv5d.jpg:large" style="width: 100%; height: 160px;">`
+    } else if (cor == 'Vermelho' && numero == 86 && patrocinador == 'Dinoco'){
+      div_resultado.innerHTML = `Você está bem indeciso de quem é seu favorito, só não escolhe o Chick por favor <br> <img src="https://uploads.spiritfanfiction.com/historias/capitulos/201802/o-rei-chick-hicks-e-mcqueen-tres-carros-um-campeao-12045848-120220180038.jpg" style="width: 100%; height: 160px;">`
+    } else if (cor == 'Azul' && numero == 95 && patrocinador == 'Rust-eze'){
+      div_resultado.innerHTML = `Seu favorito é o McQueen, mas o Rei também chama bastante sua atenção <br> <img src="https://pbs.twimg.com/media/E6GRv5UXsAULv5d.jpg:large" style="width: 100%; height: 160px;">`
+    } else if (cor == 'Azul' && numero == 43 && patrocinador == 'Rust-eze'){
+      div_resultado.innerHTML = `Seu favorito é o Rei mas o McQueen também ta no seu coração <br> <img src="https://pbs.twimg.com/media/E6GRv5UXsAULv5d.jpg:large" style="width: 100%; height: 160px;">`
+    } else if (cor == 'Azul' && numero == 86 && patrocinador == 'Rust-eze'){
+      div_resultado.innerHTML = `Você está bem indeciso de quem é seu favorito, só não escolhe o Chick por favor <br> <img src="https://uploads.spiritfanfiction.com/historias/capitulos/201802/o-rei-chick-hicks-e-mcqueen-tres-carros-um-campeao-12045848-120220180038.jpg" style="width: 100%; height: 160px;">`
+    } else if (cor == 'Azul' && numero == 95 && patrocinador == 'Dinoco'){
+      div_resultado.innerHTML = `Aparentemente você gosta bastante do Rei, e provavelmente gostaria do McQueen na Dinoco <br> <img src="https://pbs.twimg.com/media/E6GRv5UXsAULv5d.jpg:large" style="width: 100%; height: 160px;">`
+    } else if (cor == 'Azul' && numero == 43 && patrocinador == 'Dinoco'){
+      div_resultado.innerHTML = `O Rei com toda certeza é o seu favorito <br> <img src="https://static.wikia.nocookie.net/pixar/images/f/f3/Sem_t%C3%ADtuloC.png/revision/latest?cb=20200206011102&path-prefix=pt" style="width: 100%; height: 160px;">`
+    } else if (cor == 'Azul' && numero == 86 && patrocinador == 'Dinoco'){
+      div_resultado.innerHTML = `Seu favorito é o chick e provavelmente você gostaria de ver ele na Dinoco <br> <img src="https://i.ytimg.com/vi/g_e7cRKEA6I/maxresdefault.jpg" style="width: 100%; height: 160px;">`
+    } else if (cor == 'Verde' && numero == 95 && patrocinador == 'Rust-eze'){
+      div_resultado.innerHTML = `Seu favorito é o McQueen, mas não sei como você gosta do Chick também <br> <img src="https://i.ytimg.com/vi/22WtxZaDfUU/maxresdefault.jpg" style="width: 100%; height: 160px;">`
+    } else if (cor == 'Verde' && numero == 43 && patrocinador == 'Rust-eze'){
+      div_resultado.innerHTML = `Você está bem indeciso de quem é seu favorito, só não escolhe o Chick por favor <br> <img src="https://uploads.spiritfanfiction.com/historias/capitulos/201802/o-rei-chick-hicks-e-mcqueen-tres-carros-um-campeao-12045848-120220180038.jpg" style="width: 100%; height: 160px;">`
+    } else if (cor == 'Verde' && numero == 86 && patrocinador == 'Rust-eze'){
+      div_resultado.innerHTML = `Seu favorito infelizmente é o chick :( <br> <img src="https://static.wikia.nocookie.net/disney/images/d/d9/Chick_Cars_3.PNG/revision/latest?cb=20220309182843" style="width: 100%; height: 160px;">`
+    } else if (cor == 'Verde' && numero == 95 && patrocinador == 'Dinoco'){
+      div_resultado.innerHTML = `Você está bem indeciso de quem é seu favorito, só não escolhe o Chick por favor <br> <img src="https://uploads.spiritfanfiction.com/historias/capitulos/201802/o-rei-chick-hicks-e-mcqueen-tres-carros-um-campeao-12045848-120220180038.jpg" style="width: 100%; height: 160px;">`
+    } else if (cor == 'Verde' && numero == 43 && patrocinador == 'Dinoco'){
+      div_resultado.innerHTML = `Você a fã do Rei e gosta do Chick. COMO ASSIM? <br> <img src="https://3.bp.blogspot.com/-SGwLdjoyirA/UgAQZEE21CI/AAAAAAAAAEg/cySyxzbvhJM/s1600/Rei+Chick+Hicks.jpg" style="width: 100%; height: 160px;">`
+    } else if (cor == 'Verde' && numero == 86 && patrocinador == 'Dinoco'){
+      div_resultado.innerHTML = `Seu favorito é o chick e provavelmente você gostaria de ver ele na Dinoco <br> <img src="https://i.ytimg.com/vi/g_e7cRKEA6I/maxresdefault.jpg" style="width: 100%; height: 160px;">`
+    }
+  }
+</script>
