@@ -1,14 +1,13 @@
 var medidaModel = require("../models/medidaModel");
 
 function buscarUltimasMedidas(req, res) {
+var idUsuario = req.params.idUsuario;
+        //  const limite_linhas = 7;
 
-    const limite_linhas = 5;
 
-    var personagem = req.params.personagem;
+    console.log(`Recuperando as ultimas medidas`);
 
-    console.log(`Recuperando as ultimas ${limite_linhas} medidas`);
-
-    medidaModel.buscarUltimasMedidas(personagem, limite_linhas).then(function (resultado) {
+    medidaModel.buscarUltimasMedidas().then(function (resultado) {
         if (resultado.length > 0) {
             res.status(200).json(resultado);
         } else {
@@ -24,11 +23,11 @@ function buscarUltimasMedidas(req, res) {
 
 function buscarMedidasEmTempoReal(req, res) {
 
-    var personagem = req.params.personagem;
-
+    var idUsuario = req.params.idUsuario;
+    
     console.log(`Recuperando medidas em tempo real`);
 
-    medidaModel.buscarMedidasEmTempoReal(personagem).then(function (resultado) {
+    medidaModel.buscarMedidasEmTempoReal(idUsuario).then(function (resultado) {
         if (resultado.length > 0) {
             res.status(200).json(resultado);
         } else {

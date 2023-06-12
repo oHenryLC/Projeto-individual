@@ -80,7 +80,15 @@
                     </div>
                     <div class="campo">
                         <span>Insira seu personagem favorito:</span>
-                        <input id="personagem_input" type="text" placeholder="personagem">
+                        <select name="escolha" id="personagem_input">
+                            <option value="" disabled selected hidden>Selecione a personagem</option>
+                            <option value="McQueen">McQueen</option>
+                            <option value="Rei">Rei</option>
+                            <option value="Doc Hudson">Doc Hudson</option>
+                            <option value="Sally">Sally</option>
+                            <option value="Mate">Mate</option>
+                            <option value="Chick Hicks">Chick Hicks</option>
+                          </select>
                     </div>
                     
                     <button class="botao" onclick="cadastrar(); audio()">Cadastrar</button>
