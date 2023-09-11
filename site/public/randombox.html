@@ -40,18 +40,18 @@
 
 <script>
 
-    const wrapper = document.querySelector('.wrapper');
-    const question = document.querySelector('.question');
+    const wrapper = document.querySelector('.wrapper'); //Captura o tamanho da div 
+    const question = document.querySelector('.question'); 
 
-    const noBtn = document.querySelector('.no-btn');
+    const noBtn = document.querySelector('.no-btn'); // CAptura os dados do Botão
 
     const wrapperRect = wrapper.getBoundingClientRect();
     const noBtnRect = noBtn.getBoundingClientRect();
 
 
     noBtn.addEventListener('mouseover', () => {
-        const i = Math.floor(Math.random() * (wrapperRect.width - noBtnRect.width)) + 1;
-        const j = Math.floor(Math.random() * (wrapperRect.height - noBtnRect.height)) + 1;
+        const i = Math.floor(Math.random() * (wrapperRect.width - noBtnRect.width)) + 1; // faz o botão se mexer para os lados
+        const j = Math.floor(Math.random() * (wrapperRect.height - noBtnRect.height)) + 1; // faz o botão se mexerr para cima
 
         noBtn.style.left = i + 'px';
         noBtn.style.top = j + 'px';
@@ -59,7 +59,7 @@
 
     function premio() {
         alert('Parabéns!! você ganhou o desafio. Voltando para a tela ínicial do desafio')
-        window.location = 'desafio.html'
+        window.location = 'desafio.html' // se conseguir apertar o botão, aparecerá essa mensagem e irá voltar para a tela de desafio
     }
 
 </script>

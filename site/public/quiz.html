@@ -41,6 +41,7 @@
 
   <h2></h2>
 <div>
+  <!-- Começo do Simulador -->
   <div class="tituloS">
   <h1>Simulador dos 3 finalistas da copa pistão</h1>
   <h3>Selecione abaixo suas caracteriscas favoritas e veja seus resultados</h3>
@@ -53,7 +54,7 @@
     <option value="Verde">Verde</option>
     <option value="Azul">Azul</option>
   </select> <br>
-  <button class="botaoS" onclick="cadastrarCor()">Cadastrar Cor</button>
+  <button class="botaoS" onclick="cadastrarCor()">Cadastrar Cor</button> <!-- Botão para cadastrar -->
    <br>
    <br>
   <span> Selecione um número: </span>
@@ -94,23 +95,23 @@
 
   function cadastrarCor() {
     var cor = select_cor.value;
-    listaCor.push(cor);
+    listaCor.push(cor); //Função para cadastrar a caracteristica no vetor
   } 
 
   function cadastrarNumero() {
     var numero = select_numero.value;
-    listaNumero.push(numero);
+    listaNumero.push(numero); //Função para cadastrar a caracteristica no vetor
   }
 
   function cadastrarPatrocinador(){
     var patrocinador = select_pat.value
-    listaPatrocinador.push(patrocinador);
+    listaPatrocinador.push(patrocinador); //Função para cadastrar a caracteristica no vetor
   } 
 
   function verResultado(){
     var cor = select_cor.value;
     var numero = select_numero.value;
-    var patrocinador = select_pat.value
+    var patrocinador = select_pat.value  //Resultado que sairá dependendo do resultado
 
     if(cor == 'Vermelho' && numero == 95 && patrocinador == 'Rust-eze'){
       div_resultado.innerHTML = `Aparentemente você realmente é muito fã do McQueen <br> <img src="https://s3.amazonaws.com/blog.dentrodahistoria.com.br/wp-content/uploads/2022/09/14102229/relampago-mcqueen.png" style="width: 60%; height: 140px;">`
