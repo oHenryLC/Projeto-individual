@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Repetição | Página Inicial</title>
+
+  <link rel="icon" href="./assets/icon/raio.ico">
+  <link rel="stylesheet" href="./css/estilo.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <h1 class="titulo"><img class="logo_img" src="css/img/logo.png" alt=""></h1>
+      <ul class="navbar">
+
+        <li>
+          <a href="index.html">Inicial</a>
+        </li>
+        <li class="agora">
+            <a href="#">Repetição</a>
+        </li>
+        <li>
+          <a href="historia.html">História</a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="login.html">Login</a>
+        </li>
+        <li>
+          <a href="cadastro.html">Cadastro</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <span>Qual carro está correndo?</span> <br>
+  <input type="text" id="carro_input"> <br>
+  <span>Quatas voltas o carro derá na corrida?</span> <br>
+  <input type="number" id="voltas_input"> <br>
+  <button onclick="iniciar()">Iniciar Corrida!</button>
+  <div id="div_repetição"></div>
+
+  <script>
+    function iniciar() {
+        var carro = carro_input.value
+        var voltas = voltas_input.value
+
+        if(voltas > 200 || voltas <= 0){
+            div_repetição.innerHTML = "A quantidade de voltas inseridas não é válida"
+        } else {
+            for(contador = 0; contador < voltas; contador++){
+                
+            }
+        }
+
+    }
+
+  </script>

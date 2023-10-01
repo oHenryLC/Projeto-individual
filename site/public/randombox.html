@@ -41,12 +41,12 @@
 <script>
 
     const wrapper = document.querySelector('.wrapper'); //Captura o tamanho da div 
-    const question = document.querySelector('.question'); 
+    // const question = document.querySelector('.question'); 
 
-    const noBtn = document.querySelector('.no-btn'); // CAptura os dados do Botão
+    const noBtn = document.querySelector('.no-btn'); // Captura os dados do Botão
 
-    const wrapperRect = wrapper.getBoundingClientRect();
-    const noBtnRect = noBtn.getBoundingClientRect();
+    const wrapperRect = wrapper.getBoundingClientRect(); // retorna um objeto que contém informações sobre as dimensões e posição do elemento wrapper em relação à janela do navegador. 
+    const noBtnRect = noBtn.getBoundingClientRect(); // obter informações sobre as dimensões e posição desse elemento.
 
 
     noBtn.addEventListener('mouseover', () => {

@@ -89,23 +89,23 @@
 </html>
 
 <script>
-  var listaCor = [];
+  var listaCor = []; // A partir daqui estou usando vetor
   var listaNumero = [];
   var listaPatrocinador = [];
 
   function cadastrarCor() {
     var cor = select_cor.value;
-    listaCor.push(cor); //Função para cadastrar a caracteristica no vetor
+    listaCor.push(cor); //Função para cadastrar a caracteristica cor no vetor
   } 
 
   function cadastrarNumero() {
     var numero = select_numero.value;
-    listaNumero.push(numero); //Função para cadastrar a caracteristica no vetor
+    listaNumero.push(numero); //Função para cadastrar a caracteristica numero no vetor
   }
 
   function cadastrarPatrocinador(){
     var patrocinador = select_pat.value
-    listaPatrocinador.push(patrocinador); //Função para cadastrar a caracteristica no vetor
+    listaPatrocinador.push(patrocinador); //Função para cadastrar a caracteristica patrocinador no vetor
   } 
 
   function verResultado(){
@@ -113,7 +113,7 @@
     var numero = select_numero.value;
     var patrocinador = select_pat.value  //Resultado que sairá dependendo do resultado
 
-    if(cor == 'Vermelho' && numero == 95 && patrocinador == 'Rust-eze'){
+    if(cor == 'Vermelho' && numero == 95 && patrocinador == 'Rust-eze'){ // A partir daqui eu estou usando as condicionais 
       div_resultado.innerHTML = `Aparentemente você realmente é muito fã do McQueen <br> <img src="https://s3.amazonaws.com/blog.dentrodahistoria.com.br/wp-content/uploads/2022/09/14102229/relampago-mcqueen.png" style="width: 60%; height: 140px;">`
     } else if (cor == 'Vermelho' && numero == 43 && patrocinador == 'Rust-eze'){
       div_resultado.innerHTML = `Seu favorito é o McQueen, mas você também gosta do Rei que eu sei <br> <img src="https://pbs.twimg.com/media/E6GRv5UXsAULv5d.jpg:large" style="width: 60%; height: 140px;">`
