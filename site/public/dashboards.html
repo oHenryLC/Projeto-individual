@@ -49,7 +49,19 @@
     <div class="grafico">
         <canvas id="myChart"></canvas>
     </div>
+
 </div>
+<div class="updatepersonagem"></div>
+<select name="updateperso" id="alterarPersonagem">
+  <option value="" disabled selected hidden>Selecione o personagem</option>
+  <option value="McQueen">McQueen</option>
+  <option value="Rei">Rei</option>
+  <option value="Doc Hudson">Doc Hudson</option>
+  <option value="Sally">Sally</option>
+  <option value="Mate">Mate</option>
+  <option value="Chick Hicks">Chick Hicks</option>
+</select> <br>
+<button onclick="update()">Alterar personagem favorito</button>
 
 </body>
 
@@ -60,9 +72,62 @@
   window.onload = obterDadosGrafico();
 
   // function obterDadosGrafico() {
-  //   var idUsuario = Number(sessionStorage.ID_USUARIO)
-  //   obterDadosGrafico(idUsuario)
-  // } 
+    //   var idUsuario = Number(sessionStorage.ID_USUARIO)
+    //   obterDadosGrafico(idUsuario)
+    // } 
+
+    function update() {
+
+        //Recupere o valor da nova input pelo nome do id
+        // Agora vá para o método fetch logo abaixo
+
+        var personagemVar = alterarPersonagem.value;
+        var idUsuarioVar = sessionStorage.ID_USUARIO;
+
+        // if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || personagemVar == "") {
+        //     cardErro.style.display = "block"
+        //     mensagem_erro.innerHTML = "Preencha todos os campos";
+
+        //     finalizarAguardar();
+        //     return false;
+        // }
+        // else {
+        //     setInterval(sumirMensagem, 5000)
+        // }
+
+        // Enviando o valor da nova input
+        fetch("/usuarios/atualizar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                personagemServer: personagemVar,
+                idUsuarioServer: idUsuarioVar
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+
+              atualizarGrafico(idUsuario, dados, myChart)
+
+                //limparFormulario();
+                //finalizarAguardar();
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            //finalizarAguardar();
+        });
+
+        return false;
+  }
+
   function obterDadosGrafico(idUsuario) {
 
     // if (proximaAtualizacao != undefined) {

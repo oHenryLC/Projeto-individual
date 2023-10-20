@@ -96,9 +96,39 @@ function cadastrar(req, res) {
     }
 }
 
+function atualizar(req, res) {
+    // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
+    var personagem = req.body.personagemServer;
+    var idUsuario = req.body.idUsuarioServer;
+    // Faça as validações dos valores
+    if (personagem == undefined) {
+        res.status(400).send("Seu personagem não está definido");
+    } else if (idUsuario == undefined) {
+        res.status(400).send("Seu personagem não está definido");
+    } else {
+        // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
+        usuarioModel.atualizar(personagem , idUsuario)
+            .then(
+                function (resultado) {
+                    res.json(resultado);
+                }
+            ).catch(
+                function (erro) {
+                    console.log(erro);
+                    console.log(
+                        "\nHouve um erro ao realizar o cadastro! Erro: ",
+                        erro.sqlMessage
+                    );
+                    res.status(500).json(erro.sqlMessage);
+                }
+            );
+    }
+}
+
 module.exports = {
     entrar,
     cadastrar,
     listar,
-    testar
+    testar,
+    atualizar
 }
