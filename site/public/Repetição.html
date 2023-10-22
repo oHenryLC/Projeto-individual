@@ -39,24 +39,33 @@
     </div>
   </div>
 
+  <h1>Simulador de corrida</h1>
+  <h5>(Obs: A Quantidade de voltas tem que estar entre 1 e 60)</h5>
   <span>Qual carro está correndo?</span> <br>
   <input type="text" id="carro_input"> <br>
   <span>Quatas voltas o carro derá na corrida?</span> <br>
   <input type="number" id="voltas_input"> <br>
-  <button onclick="iniciar()">Iniciar Corrida!</button>
+  <button onclick="iniciar()">Iniciar Simulador!</button>
   <div id="div_repetição"></div>
 
   <script>
     function iniciar() {
         var carro = carro_input.value
         var voltas = voltas_input.value
+        var sobra = 60 - voltas
 
-        if(voltas > 200 || voltas <= 0){
+        if(voltas > 60 || voltas <= 0){
             div_repetição.innerHTML = "A quantidade de voltas inseridas não é válida"
         } else {
-            for(contador = 0; contador < voltas; contador++){
-                
+            for(contador = 1; contador <= voltas; contador++){
+                div_repetição.innerHTML  += `O corredor ${carro} esta na ${contador}° volta <br>`
             }
+
+            if(contador = voltas) {
+              div_repetição.innerHTML += `Faltam apenas ${sobra} voltas para finalizar a corrida! <br>`
+            }
+
+
         }
 
     }

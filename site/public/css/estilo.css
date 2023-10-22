@@ -39,103 +39,103 @@ body { /* Estilização do body das primeiras telas do site  */
 
 :root { 
   --tamanho-header: 80px; /* tamanho do header  */
-  --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-  --tamanho-simulador: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-  --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-  --tamanho-footer: 40px;
+  --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px); /* Calculo feito para o tamanho do banner */
+  --tamanho-simulador: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px); /* Calculo feito para o tamanho da div do simulador */
+  --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px); /* Calculo feito para o tamanho da caixa do login */
+  --tamanho-footer: 40px; /* Calculo feito para o tamanho do rodapé */
 }
 
 .container {
-  display: flex;
-  width: 80%;
-  margin: auto;
+  display: flex; /* usado para criar layouts flexíveis */
+  width: 80%; /* Largura de 80%  */
+  margin: auto; /* centralizar o elemento horizontalmente dentro de seu contêiner */
 }
 
 .header {
-  height: var(--tamanho-header);
-  border-bottom: 2px solid #ffd700;
-  background-color: rgb(190, 2, 2);
+  height: var(--tamanho-header); /* tamanho do cabeçalho */
+  border-bottom: 2px solid #ffd700; /* borda da parte de baixo com 2px, solida e cor amarela */
+  background-color: rgb(190, 2, 2); /* cor vermelho do fundo do cabeçalho */
 }
 
-.header .container {
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
+.header .container { 
+  justify-content: space-between; /* alinhamento dos itens dentro do elemento flex  */
+  align-items: center; /* alinhamento vertical dos itens no contêiner para que eles estejam centralizados verticalmente */
+  height: 100%; /* Altura é 100% do container */
 }
 
 .header a {
-  text-decoration: none;
-  color: #ffd700;
+  text-decoration: none; /* remove a decoração padrão de links */
+  color: #ffd700; /* define a cor do texto para amarelo */
 }
 
 .logo_img {
-  width: 140px;
-  height: 80px;
+  width: 140px; /* A imagem tem 140px de largura */
+  height: 80px; /* A imagem tem 80px de altura */
 }
 
 .header2 {
-  height: var(--tamanho-header);
-  background-color: rgb(190, 2, 2);
-  border-bottom: 2px solid #ffd700 ;
+  height: var(--tamanho-header); /* tamano do cabeçalho */
+  background-color: rgb(190, 2, 2); /* cor vermelho do fundo do cabeçalho */
+  border-bottom: 2px solid #ffd700 ; /* borda da parte de baixo com 2px, solida e cor amarela */
 }
 
 .header2 .container {
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
+  justify-content: space-between; /* alinhamento dos itens dentro do elemento flex */
+  align-items: center; /* alinhamento vertical dos itens no contêiner para que eles estejam centralizados verticalmente */
+  height: 100%; /* Altura é 100% do container */
 }
 
 .header2 a {
-  text-decoration: none;
-  color: #ffd700;
+  text-decoration: none; /* remove a decoração padrão de links */
+  color: #ffd700; /* define a cor do texto para amarelo */
 }
 
 .agora {
-  font-weight: 800;
+  font-weight: 800; /* Deixa o texto em negrito */
 }
 
 .navbar {
-  width: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-  color: #ffd700;
+  width: 300px; /* largura da navbar é de 300px */
+  display: flex; /* modelo de layout flexível */
+  align-items: center; /* alinha verticalmente os itens dentro da navbar ao centro */
+  justify-content: space-between; /* espaço igual entre eles e nos extremos */
+  list-style: none; /* remove os marcadores de lista */
+  color: #ffd700; /* define a cor do texto como amarelo  */
 }
 
 .navbar a{
-  transition-duration: 0.3s;
+  transition-duration: 0.3s; /* configura a duração da transição ao passar o mouse sobre os links para 0,3 segundos */
 }
 .navbar a:hover{
-  color: rgb(172, 126, 1);
+  color: rgb(172, 126, 1); /*  define a cor do texto dos links quando o mouse está sobre eles como um tom específico de marrom */
 }
 .titulo {
-  color: #ffd700;
-  width: fit-content;
-  font-weight: 500;
+  color: #ffd700; /*cor do texto amarelo*/
+  width: fit-content; /*define a largura do elemento para que ele seja ajustado automaticamente ao tamanho do seu conteúdo */
+  font-weight: 500; /*tornará o texto um pouco mais espesso do que o padrão */
 }
 
 .header h1 {
-  margin: 0;
+  margin: 0; /*não haverá espaço em branco */
 }
 
 .banner {
-  height: var(--tamanho-banner);
-  background-image: url(https://i.pinimg.com/originals/43/5f/d3/435fd377bcbfe072591ba4f9ff443ef3.jpg);
-  display: flex;
-  background-size: cover;
+  height: var(--tamanho-banner); /* tamanho do banner */
+  background-image: url(https://i.pinimg.com/originals/43/5f/d3/435fd377bcbfe072591ba4f9ff443ef3.jpg); /*Imagem do banner */
+  display: flex; /*modelo de layout flexível */
+  background-size: cover; /*a imagem vai cobrir o fundo inteiro do banner */
 }
 
 .banner .container {
-  justify-content: start;
-  align-items: top;
-  height: 100%;
+  justify-content: start; /* */
+  align-items: top; /* */
+  height: 100%; /* */
 }
 
 .banner .container p {
-  font-size: 36px;
-  color: #000000;
-  width: 280px;
+  font-size: 36px; /* */
+  color: #000000; /* */
+  width: 280px; /* */
 }
 
 .banner .container span {
