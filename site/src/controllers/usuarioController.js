@@ -24,7 +24,7 @@ function listar(req, res) {
         );
 }
 
-function entrar(req, res) {
+function entrar(req, res) { //Função para o usuario entrar no sistema
     var email = req.body.emailServer;
     var senha = req.body.senhaServer;
 
@@ -60,7 +60,7 @@ function entrar(req, res) {
 
 }
 
-function cadastrar(req, res) {
+function cadastrar(req, res) { // Função para cadastrar usuario no BD
     // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
     var nome = req.body.nomeServer;
     var email = req.body.emailServer;
@@ -96,7 +96,7 @@ function cadastrar(req, res) {
     }
 }
 
-function atualizar(req, res) {
+function atualizar(req, res) { // Função para dar o Update no BD 
     // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
     var personagem = req.body.personagemServer;
     var idUsuario = req.body.idUsuarioServer;

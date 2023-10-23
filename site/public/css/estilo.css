@@ -9,7 +9,7 @@ body { /* Estilização do body das primeiras telas do site  */
   margin: 0;
   padding: 0;
   font-family: 'Barlow', 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url(https://wallpapercave.com/wp/wp9464856.png);
+  background-image: url(https://pbs.twimg.com/media/FPnUIWgXEAkPI2H.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -127,87 +127,87 @@ body { /* Estilização do body das primeiras telas do site  */
 }
 
 .banner .container {
-  justify-content: start; /* */
-  align-items: top; /* */
-  height: 100%; /* */
+  justify-content: start; /* alinha os itens no início do contêiner. */
+  align-items: top; /* alinhar os itens no topo do contêiner */
+  height: 100%; /* Altura é de 100% do seu elemento pai */
 }
 
 .banner .container p {
-  font-size: 36px; /* */
-  color: #000000; /* */
-  width: 280px; /* */
+  font-size: 36px; /* tamanho da fonte do texto */
+  color: #000000; /* cor da fonte do texto */
+  width: 280px; /* Largura do texto */
 }
 
 .banner .container span {
-  font-weight: 800;
-  color: #ffd700;
+  font-weight: 800; /* Deixa o texto em negrito */ 
+  color: #ffd700; /* cor do texto */
 }
 
 .social {
-  background-color: #ffffff;
-  display: flex;
+  background-color: #ffffff; /* cor do background/fundo da tela */
+  display: flex; /* deixa o layout flexivel */
 }
 
 .social .container {
-  justify-content: center;
+  justify-content: center;/* Alinha os itens horizontalmente ao centro do container*/
 }
 
 .box img {
-  width: 170px;
+  width: 170px; /* largura da imagem é 170pixels */
 }
 
 .social .container .boxes {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+  display: flex; /* deixa o layout flexivel */
+  justify-content: space-between; /* espaçamento de forma que seja igual entre todos os itens  */
+  width: 100%;/* largura é 100% do elemento pai */ 
 }
 
 .box {
-  width: 280px;
-  height: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #00000046;
-  border-radius: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  box-shadow: #000000 5px 5px;
-  border: 3px solid rgb(255, 0, 0);
-  transition-duration: 0.3s;
+  width: 280px; /* Largura da box é de 280 pixels */
+  height: 450px; /* Altura da box é de 450 pixels */
+  display: flex; /* Layout da box é flexivel */
+  flex-direction: column; /* direção dos itens é em formato de colunas */
+  justify-content: center; /* alinhamento horizontal dos itens ao centro */
+  align-items: center; /* alinhamento vertical dos itens ao centro */
+  background-color: #00000046; /* A cor do fundo da box é preto */ 
+  border-radius: 20px; /* As pontas das bordas tem uma curva de 20pixels */  
+  margin-top: 20px; /* espaçamento de 20 pixels entre o box e o item acima */
+  margin-bottom: 20px; /* espaçamento de 20pxiels entre o box e o item abaixo */ 
+  box-shadow: #000000 5px 5px; /* Sombra do box com cor preta e 5 pixels para o lado e prar baixo */
+  border: 3px solid rgb(255, 0, 0); /* borda com 3pixels, solida e de cor vermelha */
+  transition-duration: 0.3s; /* tempo de transição ao passar o mouse por cima da box  */
 }
 
 .box:hover {
-  color: rgb(190, 2, 2);
-  transform: scale(1.1)
+  color: rgb(190, 2, 2); /* ao passar o mouse por cima as letras do texto ficaram vermelhas  */
+  transform: scale(1.1) /* Tanto que o item irá aumentar de tamanho ao passar o mouse por cima  */
 }
 
 .box p {
-  text-align: center;
+  text-align: center; /* os texto ficarão alinhados no meio da box */
 }
 
 .social2 {
-  background-color: #ffffff;
-  display: flex;
+  background-color: #ffffff; /* A cor do fundo do item será branco */
+  display: flex; /* deixa o layout flexivel */
 }
 
 .social2 .container2 {
-  justify-content: center;
+  justify-content: center; /* Alinhamento horizontal dos itens ao centro  */
 }
 
 .social2  {
   background-image: url(https://eikhu9b6e94.exactdn.com/wp-content/uploads/2020/04/img_1319.jpg?strip=all&lossy=0&quality=80&webp=80&avif=80&ssl=1);
-  background-size: 100%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-size: 100%; /* o tamanho do background/fundo será de 100% do item */
+  background-attachment: fixed; /* Tipo de background, no caso aqui ele é fixo ele fica parado se rolar a tela */
+  background-repeat: no-repeat; /* o background não vai repetir a imagem varias vezes */
 }
 
 .historia {
-  background-color: #fffcfc94;
-  border-radius: 20px;
-  padding: 10px 20px 20px 20px;
-  margin: 15px;
+  background-color: #fffcfc94; /* a cor do fundo da tela é um branco meio transparente */
+  border-radius: 20px; /* as pontas das bordas tem uma leve curva de 20pixels */
+  padding: 10px 20px 20px 20px; /* o espaçamento dos itens dentro da div historia tem um espaçamento da parte de cim, esquerda, direita e baixo */
+  margin: 15px; /* historia tem uma margem de 15pixels */
   /*   
   margin-top: 20px;
   margin-bottom: 20px;
@@ -217,25 +217,25 @@ body { /* Estilização do body das primeiras telas do site  */
 }
 
 .historia2 {
-  background-color: #00000075;
-  border-radius: 15px;
-  margin-top: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 30px;
+  background-color: #00000075; /* fundo do tela será preto */
+  border-radius: 15px; /* */
+  margin-top: 15px; /* */
+  padding-left: 20px; /* */ 
+  padding-right: 20px; /* */
+  margin-bottom: 30px; /* */
 }
 
 .login {
-  height: 600px;
-  width: 1349;
-  background-image: url(https://wallpaperaccess.com/full/1310629.jpg);
-  background-size: contain;
+  height: 600px; /* */
+  width: 1349; /* */
+  background-image: url(https://wallpaperaccess.com/full/1310629.jpg); /* */
+  background-size: contain; /* */
 }
 
 .login .container {
-  justify-content: end;
-  align-items: center;
-  height: 100%;
+  justify-content: end; /* */
+  align-items: center; /* */
+  height: 100%; /* */
 }
 
 .card {
@@ -560,4 +560,12 @@ body { /* Estilização do body das primeiras telas do site  */
   margin-top: 35px;
   border: 3px solid #ffd700;
   border-radius: 15px;
+}
+
+.repeticao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }

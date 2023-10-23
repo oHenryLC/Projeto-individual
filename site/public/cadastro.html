@@ -12,9 +12,9 @@
     <script src="./js/funcoes.js"></script>
 
 
-    <link rel="icon" href="./assets/icon/raio.ico">
-    <link rel="stylesheet" href="./css/estilo.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="./assets/icon/raio.ico"> <!-- Ligação a pasta de icones -->
+    <link rel="stylesheet" href="./css/estilo.css"> <!-- Ligação a pasta de css -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Ligação com a fonte de conexão -->
     <link
         href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -67,22 +67,22 @@
                      <!-- Card de cadastro -->
 
                     <div class="campo">
-                        <span>Nome:</span>
+                        <span>Nome:</span> <!-- Campo para inserir o nome -->
                         <input id="nome_input" type="text" placeholder="Seu nome">
                     </div>
                     <div class="campo">
-                        <span>E-mail:</span>
+                        <span>E-mail:</span> <!-- Campo para inserir o e-mail -->
                         <input id="email_input" type="text" placeholder="meuemail@provedor.com">
                     </div>
                     <div class="campo">
-                        <span>Senha:</span>
+                        <span>Senha:</span> <!-- Campo para inserir a senha -->
                         <input id="senha_input" type="password" placeholder="******">
                     </div>
                     <div class="campo">
-                        <span>Confirmação da Senha:</span>
+                        <span>Confirmação da Senha:</span> <!-- Campo para confirmação de senha -->
                         <input id="confirmacao_senha_input" type="password" placeholder="******">
                     </div>
-                    <div class="campo">
+                    <div class="campo"> <!-- Campo para selecionar seu personagem favorito do filme carros -->
                         <span>Insira seu personagem favorito:</span>
                         <select name="escolha" id="personagem_input">
                             <option value="" disabled selected hidden>Selecione o personagem</option>
@@ -95,7 +95,7 @@
                           </select>
                     </div>
                     
-                    <button class="botao" onclick="cadastrar(); audio()">Cadastrar</button>
+                    <button class="botao" onclick="cadastrar(); audio()">Cadastrar</button> <!-- Botão para se cadastrar -->
 
                 </div>
                 <div id="div_aguardar" class="loading-div">
@@ -190,6 +190,6 @@
 
     function audio() {
         var som = new Audio('som/katchau.mp3')
-        som.play()
+        som.play() // ao botao ser clicado, ele fara um som
     }
 </script>

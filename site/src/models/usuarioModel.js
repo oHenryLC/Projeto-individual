@@ -9,7 +9,7 @@ function listar() {
     return database.executar(instrucao);
 }
 
-function entrar(email, senha) {
+function entrar(email, senha) { //Código para o usuario entrar no sistema
     console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function entrar(): ", email, senha)
     var instrucao = `
         SELECT * FROM usuario WHERE email = '${email}' AND senha = '${senha}';
@@ -19,7 +19,7 @@ function entrar(email, senha) {
 }
 
 // Coloque os mesmos parâmetros aqui. Vá para a var instrucao
-function cadastrar(nome, email, senha, personagem) {
+function cadastrar(nome, email, senha, personagem) { //Código para cadastrar o usuario no sistema 
     console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function cadastrar():", nome, email, senha, personagem);
     
     // Insira exatamente a query do banco aqui, lembrando da nomenclatura exata nos valores
@@ -31,7 +31,7 @@ function cadastrar(nome, email, senha, personagem) {
     return database.executar(instrucao);
 }
 
-function atualizar(personagem, idUsuario) {
+function atualizar(personagem, idUsuario) { //Código feita para dar update no SQL
     console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function cadastrar():", personagem, idUsuario);
     
     // Insira exatamente a query do banco aqui, lembrando da nomenclatura exata nos valores

@@ -8,9 +8,9 @@
 
   <title>Repetição | Página Inicial</title>
 
-  <link rel="icon" href="./assets/icon/raio.ico">
-  <link rel="stylesheet" href="./css/estilo.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="icon" href="./assets/icon/raio.ico"> <!-- Ligação a pasta de icones -->
+  <link rel="stylesheet" href="./css/estilo.css"> <!-- Ligação a pasta de css -->
+  <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Ligação com a fonte de conexão -->
 </head>
 
 <body>
@@ -38,7 +38,7 @@
       </ul>
     </div>
   </div>
-
+<div class="repeticao">
   <h1>Simulador de corrida</h1>
   <h5>(Obs: A Quantidade de voltas tem que estar entre 1 e 60)</h5>
   <span>Qual carro está correndo?</span> <br>
@@ -48,20 +48,22 @@
   <button onclick="iniciar()">Iniciar Simulador!</button>
   <div id="div_repetição"></div>
 
+</div>
+
   <script>
     function iniciar() {
-        var carro = carro_input.value
-        var voltas = voltas_input.value
-        var sobra = 60 - voltas
+        var carro = carro_input.value //Variavél que puxa a input: "carro_input"
+        var voltas = voltas_input.value //Variavél que puxa a input: "voltas_input"
+        var sobra = 60 - voltas //Variavél feita para calcular a quantidade de voltas que falta para terminar o simulador
 
-        if(voltas > 60 || voltas <= 0){
+        if(voltas > 60 || voltas <= 0){ //Validação para que as voltas estajam entre 1 e 60
             div_repetição.innerHTML = "A quantidade de voltas inseridas não é válida"
         } else {
-            for(contador = 1; contador <= voltas; contador++){
-                div_repetição.innerHTML  += `O corredor ${carro} esta na ${contador}° volta <br>`
+            for(contador = 1; contador <= voltas; contador++){ //Laço de repetição FOR, utilizando um contador que já começa com 1
+                div_repetição.innerHTML  += `O corredor ${carro} esta na ${contador}° volta <br>` //Ao iniciar a função, essa frase vai aparecer o tanto de vezes do numero que foi inserido na input "voltas"
             }
 
-            if(contador = voltas) {
+            if(contador = voltas) { // Quanto o número do contador for igual ao numero de voltas, vai aparecer essa frase para mostrar o quanto de voltas faltam para finalizar a corrida
               div_repetição.innerHTML += `Faltam apenas ${sobra} voltas para finalizar a corrida! <br>`
             }
 

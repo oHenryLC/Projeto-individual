@@ -48,32 +48,32 @@
 </div>
   <div class="perguntas">
   <span> Selecione uma cor: </span> 
-  <select name="" id="select_cor">
+  <select name="" id="select_cor"> <!-- Local para selecionar uma cor -->
     <option value=""></option>
     <option value="Vermelho">Vermelho</option>
     <option value="Verde">Verde</option>
     <option value="Azul">Azul</option>
   </select> <br>
-  <button class="botaoS" onclick="cadastrarCor()">Cadastrar Cor</button> <!-- Botão para cadastrar -->
+  <button class="botaoS" onclick="cadastrarCor()">Cadastrar Cor</button> <!-- Botão para cadastrar a cor no vetor-->
    <br>
    <br>
-  <span> Selecione um número: </span>
-  <select name="" id="select_numero">
+  <span> Selecione um número: </span> 
+  <select name="" id="select_numero"> <!-- Local para selecionar um número -->
     <option value=""></option>
     <option value="43">43</option>
     <option value="95">95</option>
     <option value="86">86</option>
   </select> <br>
-  <button class="botaoS" onclick="cadastrarNumero()">Cadastrar Número</button>
+  <button class="botaoS" onclick="cadastrarNumero()">Cadastrar Número</button> <!-- Botão para cadastrar o número no vetor -->
   <br>
   <br>
   <span> Selecione um patrocinador: </span>
-  <select name="" id="select_pat">
+  <select name="" id="select_pat"> <!-- Local para selecionar um patrocinador -->
     <option value=""></option>
     <option value="Rust-eze">Rust-eze</option>
     <option value="Dinoco">Dinoco</option>
   </select> <br>
-  <button class="botaoS" onclick="cadastrarPatrocinador()">Cadastrar Patrocinador</button>
+  <button class="botaoS" onclick="cadastrarPatrocinador()">Cadastrar Patrocinador</button> <!-- Botão para cadastrar o patrocinador no vetor -->
   <br>
   <br>
   
@@ -89,9 +89,10 @@
 </html>
 
 <script>
-  var listaCor = []; // A partir daqui estou usando vetor
-  var listaNumero = [];
-  var listaPatrocinador = [];
+  // A partir daqui estou usando vetor
+  var listaCor = []; // Array que está sendo cadastrado as cores
+  var listaNumero = []; // Array que está sendo cadastrado os números
+  var listaPatrocinador = []; // Array que está sendo cadastrado os patrocinadores
 
   function cadastrarCor() {
     var cor = select_cor.value;
@@ -108,11 +109,12 @@
     listaPatrocinador.push(patrocinador); //Função para cadastrar a caracteristica patrocinador no vetor
   } 
 
-  function verResultado(){
+  function verResultado(){ 
     var cor = select_cor.value;
     var numero = select_numero.value;
-    var patrocinador = select_pat.value  //Resultado que sairá dependendo do resultado
-
+    var patrocinador = select_pat.value  
+  
+    //Resultado que sairá dependendo do resultado
     if(cor == 'Vermelho' && numero == 95 && patrocinador == 'Rust-eze'){ // A partir daqui eu estou usando as condicionais 
       div_resultado.innerHTML = `Aparentemente você realmente é muito fã do McQueen <br> <img src="https://s3.amazonaws.com/blog.dentrodahistoria.com.br/wp-content/uploads/2022/09/14102229/relampago-mcqueen.png" style="width: 60%; height: 140px;">`
     } else if (cor == 'Vermelho' && numero == 43 && patrocinador == 'Rust-eze'){

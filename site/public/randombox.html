@@ -30,7 +30,7 @@
             <h2 class="question">Pegue o McQueen</h2>
             <div class="button-group">
 
-                <button class="no-btn" onclick="premio()"></button>
+                <button class="no-btn" onclick="premio()"></button> <!-- Botão com a imagem do McQueen que corre pela tela -->
 
             </div>
         </div>
@@ -53,8 +53,8 @@
         const i = Math.floor(Math.random() * (wrapperRect.width - noBtnRect.width)) + 1; // faz o botão se mexer para os lados
         const j = Math.floor(Math.random() * (wrapperRect.height - noBtnRect.height)) + 1; // faz o botão se mexerr para cima
 
-        noBtn.style.left = i + 'px';
-        noBtn.style.top = j + 'px';
+        noBtn.style.left = i + 'px'; //Quantidade de pixel que o botão irá para os lados
+        noBtn.style.top = j + 'px'; //Quantidade de pixel que o botão irá para cima
     });
 
     function premio() {

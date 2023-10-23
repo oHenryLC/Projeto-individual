@@ -11,7 +11,7 @@
   <link rel="icon" href="./assets/icon/raio.ico">
   <link rel="stylesheet" href="./css/estilo.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- conexão com o ChartJS para plotar os graficos -->
 
 </head>
 
@@ -45,7 +45,7 @@
     <h1>Favoritos da galera</h1>
   </div>
 
-  <div class="dash">
+  <div class="dash"> <!-- Dentro dessa div irá aparecer o grafico -->
     <div class="grafico">
         <canvas id="myChart"></canvas>
     </div>
@@ -61,7 +61,7 @@
   <option value="Mate">Mate</option>
   <option value="Chick Hicks">Chick Hicks</option>
 </select> <br>
-<button onclick="update()">Alterar personagem favorito</button>
+<button onclick="update()">Alterar personagem favorito</button> <!-- Botão para fazer o update do seu personagem no bd -->
 
 </body>
 

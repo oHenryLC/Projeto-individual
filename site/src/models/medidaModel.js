@@ -5,9 +5,9 @@ function buscarUltimasMedidas(personagem, limite_linhas) {
     instrucaoSql = ''
 
     if (process.env.AMBIENTE_PROCESSO == "producao") {
-        instrucaoSql = `SELECT * FROM Personagens;`;
+        instrucaoSql = `SELECT * FROM Personagens;`; // O select que esta sendo chamado pela VIEW 
     } else if (process.env.AMBIENTE_PROCESSO == "desenvolvimento") {
-        instrucaoSql = `SELECT * FROM Personagens;`;
+        instrucaoSql = `SELECT * FROM Personagens;`; // O select que esta sendo chamado pela view
     } else {
         console.log("\nO AMBIENTE (produção OU desenvolvimento) NÃO FOI DEFINIDO EM app.js\n");
         return
