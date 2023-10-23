@@ -218,250 +218,249 @@ body { /* Estilização do body das primeiras telas do site  */
 
 .historia2 {
   background-color: #00000075; /* fundo do tela será preto */
-  border-radius: 15px; /* */
-  margin-top: 15px; /* */
-  padding-left: 20px; /* */ 
-  padding-right: 20px; /* */
-  margin-bottom: 30px; /* */
+  border-radius: 15px; /* as pontas das bordas tem uma leve curva de 15pixels */
+  margin-top: 15px; /* espaçamento de 15 pixels do topo da pagina */
+  padding-left: 20px; /* espaçamento a esquerda de 20 pixels sobre o conteudo dentro da div  */ 
+  padding-right: 20px; /* espaçamento a direita de 20 pixels sobre o conteudo dentro da div */
+  margin-bottom: 30px; /* espaçamento de 30 pixels do final da pagina */
 }
 
 .login {
-  height: 600px; /* */
-  width: 1349; /* */
-  background-image: url(https://wallpaperaccess.com/full/1310629.jpg); /* */
-  background-size: contain; /* */
+  height: 600px; /* login tem uma altura de 600 pixels */
+  background-image: url(https://wallpaperaccess.com/full/1310629.jpg); /* imagem que está no fundo da tela */
+  background-size: contain; /* O tamanho do fundo da tela */
 }
 
 .login .container {
-  justify-content: end; /* */
-  align-items: center; /* */
-  height: 100%; /* */
+  justify-content: end; /* alinhamento na horizontal para os itens ficarem no final da pagina */
+  align-items: center; /* alinhamento vertical para os itens ficarem no meio da tela */
+  height: 100%; /* altura será de 100% do seu elemento pai */
 }
 
 .card {
-  width: 30%;
-  background-color: rgb(190, 2, 2);
-  background-image: url(https://i.pinimg.com/originals/5a/81/e0/5a81e00ea6f140c929de8a9a557e4d09.png);
-  background-size: cover;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-  color: #ffffff;
-  row-gap: 20px;
-  box-shadow: 10px 15px #000000;
-  border: 3px solid #ffd700;
+  width: 30%; /* largura do card é de 30% da pagina */
+  background-color: rgb(190, 2, 2); /* a cor do fundo do card é vermelho */
+  background-image: url(https://i.pinimg.com/originals/5a/81/e0/5a81e00ea6f140c929de8a9a557e4d09.png); /* a imagem do fundo do card  */
+  background-size: cover; /* tamanho do fundo do card */
+  border-radius: 10px; /* as pontas da bordas tem uma leve curva de 10 pixels */
+  display: flex; /* deixa o layout flexivel */
+  align-items: center; /* alinhamento vertical dos itens para o centro do card */
+  justify-content: space-evenly; /* espaçamento horizontal dos itens dentro do card */
+  flex-direction: column; /* direção dos itens dentro do card é em colunas */
+  color: #ffffff; /* a cor dos textos dentro do card é branco */
+  row-gap: 20px; /* espaçamento entre as linhas de elementos*/
+  box-shadow: 10px 15px #000000; /* sombra que fica por trás do card */
+  border: 3px solid #ffd700; /* borda com 3 pixels de largura, solida e amarela */
 }
 
 .card-cadastro {
-  height: 80%;
+  height: 80%; /* a altura do card do cadastro é 80% da pagina  */
 }
 
 .card-login {
-  height: 60%;
+  height: 60%; /* a altura do card do login é 60% da pagina */
 }
 
 .card h2 {
-  margin: 0;
-  font-size: 30px;
+  margin: 0; /* não tem margem */
+  font-size: 30px; /* define o tamanho da fonte */
 }
 
 .formulario {
-  display: flex;
-  height: 90%;
-  width: 80%;
-  justify-content: space-around;
-  flex-direction: column;
+  display: flex; /* deixa o layout flexivel */
+  height: 90%; /* define a altura em 90% da pagina */
+  width: 80%; /* define a largura em 80% da pagina */
+  justify-content: space-around; /* define o espaçamento entro os itens dentro dessa div */
+  flex-direction: column; /* a direção dos elementos de dentro é de colunas */
 }
 
 .formulario span {
-  font-size: 15px;
-  font-weight: 800;
+  font-size: 15px; /* define o tamanho da fonte */
+  font-weight: 800; /* define a largura do texto */
 }
 
 .formulario input {
-  border: 2px solid #ffd700;
-  height: 30px;
-  text-align: center;
-  border-radius: 10px;
+  border: 2px solid #ffd700; /* define o tamnho da borda, solida e amarela */
+  height: 30px; /* altura da input é de 30 pixels */
+  text-align: center; /* os textos são alinhados no centro */
+  border-radius: 10px;/* as pontas das bordas tem uma curva de 10 pixels */
 }
 
 .campo {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
+  display: flex; /* deixa o layout flexivel */
+  flex-direction: column; /* a direção dos itens de dentro da div é de colunas */
+  justify-content: start; /* alinhamento horizontal do itens para o inicio da pagina */
 }
 
 .botao {
-  cursor: pointer;
-  font-family: "Barlow", sans-serif;
-  border: 0;
-  border-radius: 5px;
-  font-weight: 600;
-  font-size: 18px;
-  color: #000000;
-  background-color: #ffd900;
-  width: 100%;
-  height: 30px;
-  align-self: center;
-  box-shadow: 5px 5px;
-  transition-duration: 0.5s;
+  cursor: pointer;/* define o tipo de cursor que aparecerá quando o usuário passar o mouse sobre o elemento */
+  font-family: "Barlow", sans-serif;/* define a fonte que é usada  */
+  border: 0;/* não tem nenhuma borda */
+  border-radius: 5px;/* as pontas da borda tem uma curva de 5 pixels */
+  font-weight: 600;/* define a largura do texto */
+  font-size: 18px;/* define o tamanho da fonte de texto */
+  color: #000000;/* a cor do texto é preto */
+  background-color: #ffd900;/* a cor do fundo do botao é amarelo */
+  width: 100%;/* o botao tem uma largura de 100%  */
+  height: 30px;/* a altura do botao é de 30pixels */
+  align-self: center;/* alinhamento vertical dos itens no centro  */
+  box-shadow: 5px 5px;/* sombra que fica por trás do botao */
+  transition-duration: 0.5s;/* tempo de transição quando alguem passar o mouse por cima do botão */
 }
 
 .botao:hover {
-  color: red;
+  color: red;/* ao passar o mouse por cima do botao, o box-shadow fica vermelho */
 }
 
 .botao:active {
-  color: #ffd700;
+  color: #ffd700;/* ao apertar o botao ele ficara amarelo */
 }
 
 .loading-div {
-  width: 50px;
-  display: none;
+  width: 50px;/* define o tamanho do gif de espera */
+  display: none;/* faz com que o gif só apareca quando o login for realizado */
 }
 
 .loading-div img {
-  height: 50px;
-  width: 50px;
+  height: 50px;/* define o tamanho da imagem em 50 pixels */
+  width: 50px;/* define a largura da imagem em 50 pixels */
 }
 
 #div_erros_login {
-  display: none
+  display: none/* oculta esse item da tela */
 }
 
 .alerta_erro {
-  display: flex;
-  justify-content: flex-end;
+  display: flex;/* deixa o layout flexivel */
+  justify-content: flex-end;/* especifica que os itens devem ser alinhados no final  */
 }
 
 .card_erro {
-  display: none;
-  background-color: #fff;
-  color: black;
-  width: 230px;
-  position: fixed;
-  border-radius: 4px;
-  border: #ffd700 3px solid;
-  padding: 10px;
-  margin-right: 75%;
+  display: none;/* define que esse card não será mostrado na tela */
+  background-color: #fff;/* a cor do fundo do card é branco */
+  color: black;/* a cor dos textos é preto */
+  width: 230px;/* o card tem uma largura de 230 pixels */
+  position: fixed;/* ele está em uma posição fixa na tela */
+  border-radius: 4px;/* as pontas da borda tem uma curva de 4 pixels */
+  border: #ffd700 3px solid;/* borda amarela com 3pixels de tamanho e solida */
+  padding: 10px;/* espaçamento nas  laterais dos elementos de dentro */
+  margin-right: 75%;/* espaçamento de 75% da direita */
 }
 
 .card_erro #mensagem_erro {
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 500;/* Deixa o texto em negrito */
+  font-size: 20px;/* Define o tamanho da fonte de texto */
 }
 
 .footer {
-  height: var(--tamanho-footer);
-  width: 100%;
-  background-color: #ffd700;
-  color: #fff;
+  height: var(--tamanho-footer); /* Puxa o tamanho calculado na variavel */
+  width: 100%; /* Define a largura do footer em 100% da tela  */
+  background-color: #ffd700; /* a cor do fundo é amarela */
+  color: #fff; /* cor do texto é branco */
 }
 
 .footer h4 {
-  margin: 0;
+  margin: 0; /* não terá margem */
 }
 
 .footer .container {
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100%;
+  align-items: center; /* alinha os itens verticalmente ao centro */
+  justify-content: center; /* alinha os itens na horizontal ao centro */
+  flex-direction: column; /* direciona os itens em colunas */ 
+  height: 100%; /* define a altura em 100% do elemento pai */
 }
 
 .footer .container .version {
-  font-size: 12px;
-  font-weight: 800;
+  font-size: 12px; /* define o tamanho  */
+  font-weight: 800; /* */
 }
 
-.simulador {
-  color: white; 
+.simulador { 
+  color: white;  /* */ 
 }
 
 .simulador .container {
-  flex-direction: column;
-  height: var(--tamanho-simulador);
+  flex-direction: column; /* */
+  height: var(--tamanho-simulador); /* */
 }
 
 .img_história {
-  display: flex;
-  height: 150px;
-  width: 50%;
-  justify-content: end;
+  display: flex; /* */
+  height: 150px; /* */
+  width: 50%; /* */
+  justify-content: end; /* */
 }
 
 .mural {
-  display: flex;
-  flex-direction: row;
-  color: #fff;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 80px;
-  margin-bottom: 50px;
+  display: flex; /* */
+  flex-direction: row; /* */
+  color: #fff; /* */
+  justify-content: space-evenly; /* */
+  align-items: center; /* */
+  margin-top: 80px; /* */
+  margin-bottom: 50px; /* */
 }
 
 .mural .descriçao {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(190, 2, 2, 0.466);
-  border-radius: 10px;
-  border: 3px solid #ffd700;
-  justify-content: space-around;
-  align-items: center;
-  width: 300px;
-  height: auto;
-  transition-duration: 0.5s;
+  display: flex; /* */
+  flex-direction: column; /* */
+  background-color: rgba(190, 2, 2, 0.466); /* */
+  border-radius: 10px; /* */
+  border: 3px solid #ffd700; /* */
+  justify-content: space-around; /* */
+  align-items: center; /* */
+  width: 300px; /* */
+  height: auto; /* */
+  transition-duration: 0.5s; /* */
 }
 
 .mural .img {
-  height: 197.88px;
-  width: 306px;
-  border-radius: 20px;
-  transition-duration: 0.5s;
+  height: 197.88px; /* */
+  width: 306px; /* */
+  border-radius: 20px; /* */
+  transition-duration: 0.5s; /* */
 }
 
 .mural .img:hover{
-  transform: scale(1.1)
+  transform: scale(1.1) /* */
 }
 
 .descriçao:hover {
-  color: #fffb00;
+  color: #fffb00; /* */
 }
 
 .perguntas {
-  width: 280px;
-  height: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #00000046;
-  border-radius: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 3px solid rgb(255, 0, 0);
-  margin-left: 40%;
+  width: 280px; /* */
+  height: 450px; /* */
+  display: flex; /* */
+  flex-direction: column; /* */
+  justify-content: center; /* */
+  align-items: center; /* */
+  background-color: #00000046; /* */
+  border-radius: 20px; /* */
+  margin-top: 20px; /* */
+  margin-bottom: 20px; /* */
+  border: 3px solid rgb(255, 0, 0); /* */
+  margin-left: 40%; /* */
 }
 
 .perguntas span{
-  color: white;
+  color: white; /* */
 }
 
 .botaoS {
-  cursor: pointer;
-  font-family: "Barlow", sans-serif;
-  border: 0;
-  border-radius: 5px;
-  font-weight: 600;
-  font-size: 18px;
-  color: #000000;
-  background-color: #ff000077;
-  height: 30px;
-  align-self: center;
-  box-shadow: 3px 3px;
-  transition-duration: 0.4s;
+  cursor: pointer; /* */
+  font-family: "Barlow", sans-serif; /* */
+  border: 0; /* */
+  border-radius: 5px; /* */
+  font-weight: 600; /* */
+  font-size: 18px; /* */
+  color: #000000; /* */
+  background-color: #ff000077; /* */
+  height: 30px; /* */
+  align-self: center; /* */
+  box-shadow: 3px 3px; /* */
+  transition-duration: 0.4s; /* */
 }
 
 .botaoS:hover {

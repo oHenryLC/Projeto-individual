@@ -43,7 +43,7 @@
   <h5>(Obs: A Quantidade de voltas tem que estar entre 1 e 60)</h5>
   <span>Qual carro está correndo?</span> <br>
   <input type="text" id="carro_input"> <br>
-  <span>Quatas voltas o carro derá na corrida?</span> <br>
+  <span>Quatas voltas o carro dará na corrida?</span> <br>
   <input type="number" id="voltas_input"> <br>
   <button onclick="iniciar()">Iniciar Simulador!</button>
   <div id="div_repetição"></div>
@@ -58,7 +58,7 @@
 
         if(voltas > 60 || voltas <= 0){ //Validação para que as voltas estajam entre 1 e 60
             div_repetição.innerHTML = "A quantidade de voltas inseridas não é válida"
-        } else {
+         } else {
             for(contador = 1; contador <= voltas; contador++){ //Laço de repetição FOR, utilizando um contador que já começa com 1
                 div_repetição.innerHTML  += `O corredor ${carro} esta na ${contador}° volta <br>` //Ao iniciar a função, essa frase vai aparecer o tanto de vezes do numero que foi inserido na input "voltas"
             }
@@ -68,7 +68,7 @@
             }
 
 
-        }
+         }
 
     }
 
