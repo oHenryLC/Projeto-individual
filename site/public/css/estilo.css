@@ -371,200 +371,199 @@ body { /* Estilização do body das primeiras telas do site  */
 }
 
 .footer .container .version {
-  font-size: 12px; /* define o tamanho  */
-  font-weight: 800; /* */
+  font-size: 12px; /* define o tamanho da fonte de texto */
+  font-weight: 800; /* deixa o texto em negrito */
 }
 
 .simulador { 
-  color: white;  /* */ 
+  color: white;  /* a cor do texto do simulador é branco */ 
 }
 
 .simulador .container {
-  flex-direction: column; /* */
-  height: var(--tamanho-simulador); /* */
+  flex-direction: column; /* a direção dos itens é em colunas */
+  height: var(--tamanho-simulador); /* var que puxa o calculo do tamanho do simulador */
 }
 
 .img_história {
-  display: flex; /* */
-  height: 150px; /* */
-  width: 50%; /* */
-  justify-content: end; /* */
+  display: flex; /* deixa o layout flexivel */
+  height: 150px; /* tamanho da img da historia é de 150 pixels */
+  width: 50%; /* largura é de 50% da pagina */
+  justify-content: end; /* alinha os itens na horizontal no final */
 }
 
 .mural {
-  display: flex; /* */
-  flex-direction: row; /* */
-  color: #fff; /* */
-  justify-content: space-evenly; /* */
-  align-items: center; /* */
-  margin-top: 80px; /* */
-  margin-bottom: 50px; /* */
+  display: flex; /* deixa o layout flexivel */
+  flex-direction: row; /* alinha os itens de maneira horizontal */
+  color: #fff; /* cor do texto é branco */
+  justify-content: space-evenly; /* alinha os itens de maneira horizontal com espaçamentos iguais */
+  align-items: center; /* alinha os itens de maneira vertical ao centro */
+  margin-top: 80px; /* espaçamento com o topo da pagina de 80 pixels */
+  margin-bottom: 50px; /*  */
 }
 
 .mural .descriçao {
-  display: flex; /* */
-  flex-direction: column; /* */
-  background-color: rgba(190, 2, 2, 0.466); /* */
-  border-radius: 10px; /* */
-  border: 3px solid #ffd700; /* */
-  justify-content: space-around; /* */
-  align-items: center; /* */
-  width: 300px; /* */
-  height: auto; /* */
-  transition-duration: 0.5s; /* */
+  display: flex; /* deixa o layout flexivel */
+  flex-direction: column; /* direciona os itens em colunas */
+  background-color: rgba(190, 2, 2, 0.466); /* fundo da div  é vermelho */
+  border-radius: 10px; /* as pontas da borda com curvas de 10 pixels */
+  border: 3px solid #ffd700; /* borda com 3pixels de tamanho solida e amarela */
+  justify-content: space-around; /* os elementos tem espaçamentos iguais */
+  align-items: center; /* alinha os itens verticalmente ao centro */
+  width: 300px; /* largura de 300pixels */
+  height: auto; /* altura automatica */
+  transition-duration: 0.5s; /* duração da transição */
 }
 
 .mural .img {
-  height: 197.88px; /* */
-  width: 306px; /* */
-  border-radius: 20px; /* */
-  transition-duration: 0.5s; /* */
+  height: 197.88px; /* altura da imagem tem 197.88 pixels */
+  width: 306px; /* largura tem 306pixels de largura */
+  border-radius: 20px; /* as pontas da borda com curva de 20 pixels */
+  transition-duration: 0.5s; /* duração da transição */
 }
 
 .mural .img:hover{
-  transform: scale(1.1) /* */
+  transform: scale(1.1) /* tamanho que cresce ao passar o mouse por cima */
 }
 
 .descriçao:hover {
-  color: #fffb00; /* */
+  color: #fffb00; /* ao passar o mouse por cima o texto fica amarelo */
 }
 
 .perguntas {
-  width: 280px; /* */
-  height: 450px; /* */
-  display: flex; /* */
-  flex-direction: column; /* */
-  justify-content: center; /* */
-  align-items: center; /* */
-  background-color: #00000046; /* */
-  border-radius: 20px; /* */
-  margin-top: 20px; /* */
-  margin-bottom: 20px; /* */
-  border: 3px solid rgb(255, 0, 0); /* */
-  margin-left: 40%; /* */
+  width: 280px; /* largura da div é de 280 pixels */
+  height: 450px; /* altura da div é 450 pixels */
+  display: flex; /* deixa o layout flexivel */
+  flex-direction: column; /* direção dos elementos dentro da div é de colunas */
+  justify-content: center; /* alinha os itens horizontalmente ao centro */
+  align-items: center; /* alinha os itens verticalmente ao centro */
+  background-color: #00000046; /* cor do fundo da div é preto */
+  border-radius: 20px; /* as pontas da borda tem curva de 20 pixels  */
+  margin-top: 20px; /* espaçamento de 20 pixels do começo da pagina */
+  margin-bottom: 20px; /* espaçamento de 20 pixels do final da pagina */
+  border: 3px solid rgb(255, 0, 0); /* borda com 3px de tamanho solida e vermelho */
+  margin-left: 40%; /* margem de 40% do lado esquerdo da pagina */
 }
 
 .perguntas span{
-  color: white; /* */
+  color: white; /* a cor do texto é branco */
 }
 
 .botaoS {
-  cursor: pointer; /* */
+  cursor: pointer; /* ao passar o mouse por cima o mouse muda de forma */
   font-family: "Barlow", sans-serif; /* */
-  border: 0; /* */
-  border-radius: 5px; /* */
-  font-weight: 600; /* */
-  font-size: 18px; /* */
-  color: #000000; /* */
-  background-color: #ff000077; /* */
-  height: 30px; /* */
-  align-self: center; /* */
-  box-shadow: 3px 3px; /* */
-  transition-duration: 0.4s; /* */
+  border: 0; /* nao tem borda */
+  border-radius: 5px; /* curva de 5pixels nas bordas */
+  font-weight: 600; /* deixa o texto em negrito */
+  font-size: 18px; /* tamanho da fonte de texto */
+  color: #000000; /* cor do texto é preto */
+  background-color: #ff000077; /* a cor do fundo do botao é vermelho */
+  height: 30px; /* altura do botao é de 30 pixels */
+  align-self: center; /* alinha os itens na vertical ao centro */
+  box-shadow: 3px 3px; /* sombra do botao de 3 pixels */
+  transition-duration: 0.4s; /* duração da transação */
 }
 
 .botaoS:hover {
-  color: red;
+  color: red; /* ao passar o mouse por cuma o botao fica vermelho */
 }
 
 .botaoS:active {
-  color: #000000;
+  color: #000000; /* ao clicar no botao ele fica preto */
 }
 
 .desafio {
-  margin-left: 35%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20%;
-  background-color: #00000088;
-  border-radius: 20px;
-  border: 3px solid red;
-  color: #ffd700;
-  height: 120px;
-  width: 350px;
+  margin-left: 35%; /* espaçamento de 35% em relação ao lado esquerdo da pagina */
+  display: flex; /* deixa o layout flexivel */
+  flex-direction: column; /* direciona os itens em colunas */
+  align-items: center; /* alinha os itens na vertical ao centro */
+  margin-top: 20%;/* espaçamento de 35pixels em relação ao topo da pagina */
+  background-color: #00000088;  /* a cor do fundo da div é preto */
+  border-radius: 20px; /* curvas nas bordas com 20 pixels   */
+  border: 3px solid red; /* borda com 3pixels de tamanho solida e vermelho */
+  color: #ffd700; /* cor do texto é amarelo */
+  height: 120px; /* altura da div é ded 120pixels */
+  width: 350px; /* largura da div é de 350pixels */
 }
 
 .botaoD {
-  cursor: pointer;
-  font-family: "Barlow", sans-serif;
-  border: 0;
-  border-radius: 5px;
-  font-weight: 600;
-  font-size: 18px;
-  color: #000000;
-  background-color: #ffd900;
-  width: 70%;
-  height: 30px;
-  align-self: center;
-  box-shadow: 3px 3px;
-  transition-duration: 0.5s;
+  cursor: pointer; /* ao passar o mouse por cima ele muda de forma */
+  font-family: "Barlow", sans-serif; /* define a fonte do texto que vai aparecer */
+  border: 0; /* nao tem bordas no botao */
+  border-radius: 5px;  /* curvas de 5px nas pontas da borda */
+  font-weight: 600; /* deixa o texto em negrito */
+  font-size: 18px; /* tamanho da fonte do texto */
+  color: #000000; /* cor do texto é preto */
+  background-color: #ffd900; /* cor do fundo do botão é amarelo */
+  width: 70%; /* a largura do botão é de 70%  */
+  height: 30px; /* altura do botão é de 30 pixels */
+  align-self: center; /* alinha os itens na vertical ao centro */
+  box-shadow: 3px 3px; /* sombra que fica atrás do botao com 3pixels de tamanho */
+  transition-duration: 0.5s; /* duração da transição */
 }
 
 .botaoD:hover {
-  color: red;
+  color: red; /* ao passar o mouse por cima a sombra fica vermelho  */
 }
 
 .botaoD:active {
-  color: #ffd700;
+  color: #ffd700; /* ao apertar o botão ele fica amarelo */
 }
 
 .resultado{
-  color: rgb(255, 255, 255);
-  background-color: #00000091;
-  width: 30%;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-items: center;
-  margin-left: 35%;
-  border: 3px solid rgb(255, 0, 0);
+  color: rgb(255, 255, 255); /* cor do texto é branco */
+  background-color: #00000091; /* a cor do fundo é preto */
+  width: 30%; /* largura é de 30% da pagina */
+  border-radius: 10px; /* curva na borda de 10p ixels */
+  display: flex; /* deixa o layout flexivel */
+  flex-direction: column; /* direciona os itens em colunas */
+  align-items: center; /* alinha os itens na vertical ao centro */
+  margin-left: 35%; /*  espaçamento de 35% em relação ao lado esquerdo da pagina */
+  border: 3px solid rgb(255, 0, 0); /* borda com 3pixels de altura solida e vermelho */
 }
 
 .tituloS{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.356);
-  color:rgb(190, 2, 2);
-  width: 50%;
-  margin-left: 28%;
-  margin-top: 35px;
-  border: 3px solid rgb(190, 2, 2);
-  border-radius: 15px;
+  display: flex; /* deixa o layout flexivel */
+  flex-direction: column; /* direciona os itens em colunas */
+  align-items: center; /* alinha os itens verticalmente ao centro */
+  background-color: rgba(0, 0, 0, 0.356); /* cor do fundo da div é preto */
+  color:rgb(190, 2, 2); /* cor do texto é vermelho */
+  width: 50%; /* largura é de 50% da pagina */
+  margin-left: 28%; /* espaçamento de 28% em relação ao lado esquerdo da pagina */
+  margin-top: 35px;/* espaçamento de 35pixels em relação ao topo da pagina */
+  border: 3px solid rgb(190, 2, 2);  /* */
+  border-radius: 15px; /* curvas nas bordas com 15pixels  */
 }
 
 .dash {
-  display: flex;
+  display: flex; /* deixa o layout flexivel */
 }
 
 .grafico {
-  background-color: rgba(0, 0, 0, 0.575);
-  height: 300px;
-  width: 600px;
-  margin-top: 5%;
-  margin-left: 28%;
-  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.575); /* cor do fundo é preto */
+  height: 300px; /* altura é de 300 pixles */
+  width: 600px; /* largura é de 600 pixels */
+  margin-top: 5%; /* espaçamento de 5% em relação ao topo da pagina */
+  margin-left: 28%; /* espaçamento de 28% em relação ao lado esquerdo da pagina  */
+  border-radius: 7px; /* curvas nas bordas com 7pixels */
 }
 
 .h1 {
-  background-color: rgba(0, 0, 0, 0.466);
-  color:#ffd700;
-  width: 22%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 38%;
-  margin-top: 35px;
-  border: 3px solid #ffd700;
-  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.466); /* a cor do fundo é preto */
+  color:#ffd700; /* cor do texto é amarelo */
+  width: 22%; /* largura de 22% */
+  display: flex; /* deixa o layout flexivel */
+  flex-direction: column; /* direciona os itens em colunas  */
+  align-items: center; /* alinha os itens na vertical ao centro */
+  margin-left: 38%; /* espaçamento de 38% em relação ao lado esquerdo da pagina */
+  margin-top: 35px; /* espaçamento de 35pixels em relação ao topo da pagina */
+  border: 3px solid #ffd700; /* bordas com 3 pixels solido e amarelo */
+  border-radius: 15px; /* curvas nas bordas com 15pixels */
 }
 
 .repeticao {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: flex; /* deixa o layout flexivel */
+  flex-direction: column; /* direciona os itens em colunas */
+  justify-content: center; /* alinha os itens em horizontal ao centro */
+  align-items: center; /* alinha os itens na vertical ao centro */
 
 }
